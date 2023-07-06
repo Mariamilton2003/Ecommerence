@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root{
+    /* background:url('./Assets/img/5297078.jpg'); */
+    background:linear-gradient(to right top,
+    #000d1e,#031123,#051429,
+    #07172e,#091a34,#0e2342,
+    #132c51,#183660,#204a7e,
+    #255f9d,#2875be,#278cdf) ;
+    background-repeat: no-repeat repeat-y;
+    background-size: cover;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.btn{
+    @apply font-bold text-lg sm:text-2xl px-4 py-2 rounded-lg text-white bg-rose-600 cursor-pointer hover:bg-rose-500 focus:outline focus:bg-rose-500; 
+}
+.cardBtn{
+    @apply font-bold text-lg sm:text-xl px-2 py-2 rounded-lg text-white bg-rose-600 cursor-pointer hover:bg-rose-500 focus:outline focus:bg-rose-500; 
+}
+  
+input[type='number']::-webkit-inner-spin-button{
+    display: none;
+}
+
+*,*::after,*::before{
+    outline: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.scrollbar::-webkit-scrollbar{
+    height:.3rem;
+}
+
+.scrollbar::-webkit-scrollbar-track{
+    padding: 8rem;
+    background: #252525;
+}
+
+.scrollbar::-webkit-scrollbar-thumb{
+    background: #625b5b;
+}
